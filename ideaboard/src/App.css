@@ -1,0 +1,122 @@
+:root {
+  --gray: #282c28;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+header {
+  height: 72px;
+  background-color: var(--gray);
+  color: whitesmoke;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.content {
+  margin-top: 96px;
+  width: 100vw;
+  min-height: calc(100vh - 96px);
+}
+
+section {
+  max-width: 36em;
+  margin: auto;
+}
+
+button {
+  margin: 3px 0 0 0;
+  padding: 5px 10px;
+  background-color: var(--gray);
+  border: none;
+  color: whitesmoke;
+  border-radius: 4px;
+}
+
+ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 5px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+li {
+  padding: 5px 10px;
+  border: 1px solid var(--gray);
+  border-radius: 4px;
+  position: relative;
+}
+
+.tile {
+  height: 150px;
+  width: 150px;
+  float: left;
+  margin: 5px;
+  text-align: left;
+}
+
+.input {
+  width: 90%;
+  margin: 3px auto;
+  border: 0;
+  padding: 1px 1ch;
+  font-size: 16px;
+}
+
+textarea {
+  height: 120px;
+  margin-top: 3px;
+  resize: none;
+}
+
+.dash-wrap {
+  margin: 3px auto;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.notification {
+  margin-left: auto;
+  text-align: right;
+  color: gray;
+}
+
+.deleteBtn {
+  visibility: hidden;
+  position: absolute;
+  right: -8px;
+  top: -4px;
+  color: white;
+  font-weight: 900;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  padding: 1px;
+  font-size: 12px;
+  background-color: crimson;
+  cursor: pointer;
+}
+
+.tile:hover .deleteBtn {
+  visibility: visible;
+}
+
+@media screen and (max-width: 400px) {
+  .tile {
+    flex: 350px;
+  }
+}
